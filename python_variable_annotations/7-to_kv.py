@@ -5,4 +5,5 @@ from typing import Tuple, Union
 
 def to_kv(k: str, v: Union[float, int]) -> Tuple[str, float]:
     "arguments and returns a tuple"
-    return (k, float(v ** 2))
+    tup = (k, v * v)
+    return tup
