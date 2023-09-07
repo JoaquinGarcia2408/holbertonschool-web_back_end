@@ -3,7 +3,7 @@
 
 
 def index_range(page, page_size):
-    "start index and an end index corresponding to the range of indexes to return"
+    "start index and an end index corresponding to the range of indexes"
     start_index = (page - 1) * page_size
     end_index = start_index + page_size
     
