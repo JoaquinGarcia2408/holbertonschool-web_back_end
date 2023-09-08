@@ -25,7 +25,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        ""
+        "checks the validity of the arguments, uses index_range"
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
         start_index, end_index = index_range(page, page_size)
@@ -34,6 +34,7 @@ class Server:
             return []
 
         return data[start_index:end_index]
+
 
 def index_range(page, page_size):
     "start index and an end index corresponding to the range of indexes"
