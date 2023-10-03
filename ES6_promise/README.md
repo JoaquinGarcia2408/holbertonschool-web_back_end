@@ -1,1 +1,1 @@
-<title>ES6 Promises</title>
+ES6 Promises
